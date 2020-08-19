@@ -35,6 +35,8 @@ class ProjectDetail extends StatelessWidget {
   }
 }
 
+/* Reads the technologies used in a project
+ * returns a text row containing technologies */
 Widget _renderTechnologies(BuildContext context, Project project) {
   var result = List<Widget>();
   for (int i = 0; i < project.technologies.length; i++) {
@@ -44,6 +46,7 @@ Widget _renderTechnologies(BuildContext context, Project project) {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: result);
 }
 
+/* Video player, reads in a project and uses youtube url */
 Widget _videoPlayer(BuildContext context, Project project) {
   String videoId;
   videoId = YoutubePlayer.convertUrlToId(project.youtubeURL);
@@ -60,6 +63,7 @@ Widget _videoPlayer(BuildContext context, Project project) {
   );
 }
 
+/* Reads in a project, uses the banner URL to be displayed under video player */
 Widget _bannerImage(BuildContext context, Project project) {
   return Center(
       child: Container(
@@ -70,6 +74,10 @@ Widget _bannerImage(BuildContext context, Project project) {
             image: NetworkImage(project.bannerURL),
           ))));
 }
+
+/* 
+  Text widgets
+*/
 
 Widget _semiBoldSubHeader(String text) {
   return FadeIn(
