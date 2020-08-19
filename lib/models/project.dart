@@ -1,7 +1,15 @@
 class Project {
   final List<String> technologies;
   final String name;
-  final String url;
+  final String imageURL;
   final String description;
-  Project({this.name, this.technologies, this.url, this.description});
+  final String youtubeURL;
+  final String bannerURL;
+  Project(
+      {this.name,
+      this.technologies,
+      this.imageURL,
+      this.description,
+      this.youtubeURL,
+      this.bannerURL});
 }

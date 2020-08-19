@@ -8,6 +8,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ResumeDetail(mockDetails));
+    return MaterialApp(
+        theme: ThemeData(
+          accentColor: Color.fromRGBO(216, 226, 220, 1.0),
+          primaryColor: Color.fromRGBO(255, 229, 217, 1.0),
+        ),
+        home: ResumeDetail(mockDetails));
   }
 }

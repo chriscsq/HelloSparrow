@@ -1,9 +1,8 @@
-import './work_experience.dart';
 import 'project.dart';
 
 class Details {
-  final String name;
-  final List<WorkExperience> previousJobs;
+  final String firstName;
+  final String lastName;
   final List<Project> projects;
-  Details({this.name, this.previousJobs, this.projects});
+  Details({this.firstName, this.lastName, this.projects});
 }
