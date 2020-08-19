@@ -13,6 +13,7 @@ class App extends StatelessWidget {
           accentColor: Color.fromRGBO(216, 226, 220, 1.0),
           primaryColor: Color.fromRGBO(255, 229, 217, 1.0),
         ),
+        debugShowCheckedModeBanner: false,
         home: ResumeDetail(mockDetails));
   }
 }
