@@ -18,7 +18,7 @@ class MockDetails extends Details {
           description:
               'Topdish was created for a client in one of my senior level iOS classes. The entire process consisted of requirements gathering, creating high fidelity mockups, as well as execution of the mockup into an application. Most of my focus for the app was on the UI/UX, as well as architecture and primary development of the app.',
           technologies: <String>["Swift", "Adobe xd", "Firebase"],
-          youtubeURL: 'https://youtu.be/XHPVnXJ6FOo',
+          youtubeURL: 'https://youtu.be/ho99mycyCeI',
           bannerURL: 'https://i.imgur.com/lrezGii.gif')
     ]);
   }
